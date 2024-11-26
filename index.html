@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img class="logo" src="img/logo.png" alt="logo">
+            <div class="wrapper-inner">
+                <div class="offer">
+                    <h1 class="offer__title1">С помощью нас</h1>
+                    <h1 class="offer__title2">Вы сможете создать то, о чём</h1>
+                    <span class="offer__span">желаете!</span>
+                    <p class="offer__text">
+                        Наши способности + опыт позволят Вам достичь огромного успеха.
+                        Мы верим в вас! И знаем это на все 100%. Вас не остоновить!
+                    </p>
+                    <a href="#" class="btn">Узнать больше...</a>
+                </div>
+                <img class="img" src="img/header-img.png" alt="picture">
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="container">
+                <div class="flex2">
+                    <div class="offer2">
+                        <h2 class="offer2_title">Что Вам необходимо?</h2>
+                    </div>
+                    <div class="blocks">   
+                        <div class="block">
+                            <img class="img1" src="img/f3.png" alt="picture">
+                            <h3 class="block_title">Первый блок</h3>
+                            <p class="block_text">
+                                lorem ipsum dolor sit amet consectetur adipiscing elit
+                            </p>
+                        </div>
+                        <div class="block">
+                            <img class="img1" src="img/f4.png" alt="picture">
+                            <h3 class="block_title">Второй блок</h3>
+                            <p class="block_text">
+                                lorem ipsum dolor sit amet consectetur adipiscing elit
+                            </p>
+                        </div>
+                        <div class="block">
+                            <img class="img1" src="img/f5.png" alt="picture">
+                            <h3 class="block_title">Третий блок</h3>
+                            <p class="block_text">
+                                lorem ipsum dolor sit amet consectetur adipiscing elit
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+        </section>
+        <section class="container2">
+                <div class="flex3">
+                    <div class="offer3">
+                        <h2 class="offer2_title">Форма заказа обратного звонка</h2>
+                    </div>
+
+                    <form class="form1" action="#">
+                        <input type="text" id="name" name="name" value="" placeholder="Имя" onblur="checkName(id)" required>
+                        <span id="name_check"></span>
+                
+                        <input type="text" id="mail" name="pswd" value="" placeholder="Введите свой E-mail" onblur="checkEmail(id)" required>
+                        <span id="mail_check"></span>
+
+                        <input type="text" id="tel" name="tel" value="" placeholder="Телефон (xxx-xxx-xx-xx)" onblur="checkPhone(id)" required>
+                        <span id="tel_check"></span>
+
+                        <textarea type="text" id="txt" name="txt" value="" placeholder="Какая тема Вас интересует?" required></textarea>
+                
+                        <button id="btn1" type="submit" onclick="sendForm(id)">Отправить вопрос</button>
+                    </form>
+
+                    <div class="offer3">
+                        <h2 class="offer2_title">Форма заказа консультации по теме блока</h2>
+                    </div>
+
+                    <form class="form1" action="#">
+                        <input type="text" id="name1" name="name" value="" placeholder="Имя" onblur="checkName(id)" required>
+                        <span id="name1_check"></span>
+                
+                        <input type="text" id="mail1" name="pswd" value="" placeholder="Введите свой E-mail" onblur="checkEmail(id)" required>
+                        <span id="mail1_check"></span>
+
+                        <input type="text" id="tel1" name="tel" value="" placeholder="Телефон (xxx-xxx-xx-xx)" onblur="checkPhone(id)" required>
+                        <span id="tel1_check"></span>
+
+                        <input type="text" id="blk1" list="block_list" placeholder="Интересующий блок" onblur="checkBlock(id)" required>
+                        <datalist id="block_list">
+                            <option value="Первый блок"></option>
+                            <option value="Второй блок"></option>
+                            <option value="Третий блок"></option>
+                        </datalist>
+                        <span id="blk1_check"></span>
+
+                        <textarea type="text" id="txt1" name="txt" value="" placeholder="О чём Вы хотите проконсультирвоаться?" required></textarea>
+                
+                        <button id="btn2" type="submit" onclick="sendForm()">Отправить запрос</button>
+                    </form>
+                </div>
+        </section>
+    </main>
+    <div class="header">
+        <footer class="footer">
+            © Всё на этом сайте защищено
+        </footer>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
